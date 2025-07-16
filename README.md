@@ -39,10 +39,12 @@ Para ejecutar el proyecto:
 ```
 ----
 
-## 📌 Ejemplo de Salida
+## 📌 Ejemplo de Salida Fibonacci
 
 - Con 100
 SE DEMORA FULL
 ![img.png](img.png)
 - Con 50
 ![img_1.png](img_1.png)
+## 📌 Ejemplo de Salida Laberinto
+![img_2.png](img_2.png)
