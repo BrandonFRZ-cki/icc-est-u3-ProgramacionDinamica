@@ -24,10 +24,10 @@ public class App {
     }
     public static void runMaze(){
         boolean[][] predefinedMaze = {
-                 {true, true , true,true}
+                 {true , true , true,true}
                 ,{false, true , true,true}
-                ,{true, true , false,false}
-                ,{true, true , true,true}
+                ,{true , true , false,false}
+                ,{true , true , true,true}
         };
         Maze maze = new Maze(predefinedMaze);
         System.out.println("\n========== Laberinto:\n");
@@ -38,10 +38,12 @@ public class App {
 
         List<MazeSolver> solvers= Arrays.asList(
                 new MazeSolverRecursive(),
-                new MazeSolverCompleteRecursive()
+                new MazeSolverCompleteRecursive(),
+                new MazeSolverRecursivoCompletoBT()
         );
         MazeSolver solver = solvers.get(0);
         List<Cell> path ;
+
         path = solver.getPath(maze.getGrid(),start,end);
 
         System.out.println("\nCamino Encontrado:\n - Recursivo derecha / Abajo ");
@@ -52,5 +54,9 @@ public class App {
         path = solverComplete.getPath(maze.getGrid(),start,end);
         System.out.println(path);
 
+        System.out.println("\nCamino Encontrado:\n - Recursivo Completo BT");
+        MazeSolver solverBT = solvers.get(2);
+        path = solverBT.getPath(maze.getGrid(),start,end);
+        System.out.println(path);
     }
 }
