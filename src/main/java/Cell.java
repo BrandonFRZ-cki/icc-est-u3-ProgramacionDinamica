@@ -24,9 +24,6 @@ public class Cell {
 
     @Override
     public String toString() {
-        return "Cell{" +
-                "fila=" + fila +
-                ", columna=" + columna +
-                '}';
+        return "Cell [" + fila +" , " + columna + ']';
     }
 }

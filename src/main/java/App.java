@@ -37,13 +37,20 @@ public class App {
         Cell end = new Cell(3,3);
 
         List<MazeSolver> solvers= Arrays.asList(
-                new MazeSolverRecursive()
+                new MazeSolverRecursive(),
+                new MazeSolverCompleteRecursive()
         );
         MazeSolver solver = solvers.get(0);
         List<Cell> path ;
         path = solver.getPath(maze.getGrid(),start,end);
 
-        System.out.println("\nCamino ENcontrado:\n");
+        System.out.println("\nCamino Encontrado:\n - Recursivo derecha / Abajo ");
         System.out.println(path);
+
+        System.out.println("\nCamino Encontrado:\n - Recursivo Completo");
+        MazeSolver solverComplete = solvers.get(1);
+        path = solverComplete.getPath(maze.getGrid(),start,end);
+        System.out.println(path);
+
     }
 }
