@@ -1,28 +1,31 @@
+# 🧠 Práctica de Programación Dinámica
 
-# Práctica de Búsqueda Binaria
+## 📘 Información General
 
-## 📌 Información General
-
-- **Título:** Práctica de Programacion Dinamica
-- **Asignatura:** Estructura de Datos
-- **Carrera:** Computación
-- **Estudiante:** Brandon Fernando Rivera Zambrano
-- **Fecha:** 16/07/2025
-- **Profesor:** Ing. Pablo Torres
-
-# Guía de Práctica de Laboratorio – Programacion Dinamica
-
-## 🛠️ Descripción
+| Campo         | Detalles                                      |
+|---------------|-----------------------------------------------|
+| **Título**     | Práctica de Programación Dinámica             |
+| **Asignatura** | Estructura de Datos                           |
+| **Carrera**    | Computación                                   |
+| **Estudiante** | Brandon Fernando Rivera Zambrano              |
+| **Profesor**   | Ing. Pablo Torres                             |
+| **Fecha**      | 16/07/2025                                    |
 
 ---
 
-## 🚀 Ejecución
+## 🛠️ Descripción
 
-Para ejecutar el proyecto:
+Esta práctica de laboratorio aborda conceptos fundamentales de **programación dinámica** y **recursividad**, aplicados a la resolución de laberintos y cálculo eficiente de la secuencia de Fibonacci. Se implementa una comparación de métodos para evaluar rendimiento, además de un sistema de trazado de caminos en una matriz booleana que representa un laberinto.
 
-1. **Compila el código:**
-   ```bash
+---
+
+## 🚀 Ejecución del Proyecto
+
+1. **Compilar el código:**
+
+```bash
    javac App.java
+```
 
 ## 🚀 Ejecución
 
@@ -41,10 +44,10 @@ Para ejecutar el proyecto:
 
 ## 📌 Ejemplo de Salida Fibonacci
 
-- Con 100
-SE DEMORA FULL
+### Con 100
+- Se demora demasiado
 ![img.png](img.png)
-- Con 50
+### Con 50
 ![img_1.png](img_1.png)
 ## 📌 Ejemplo de Salida Laberinto
-![img_2.png](img_2.png)
+![img_3.png](img_3.png)
